@@ -1,0 +1,186 @@
+
+# =========================================
+# LIST DATA TYPE AND LIST OPERATORS
+# =========================================
+
+# 1. Creating lists
+
+emptyList = []
+subjects = ["English", "Maths", "Computer Science", "Biology"]
+
+print("CREATING LISTS")
+print(subjects)
+print(type(subjects))
+
+
+# 2. Accessing list items using indexing
+# Indexing starts at 0
+
+print("\nLIST INDEXING")
+print(subjects[0])    # English
+print(subjects[2])    # Computer Science
+print(subjects[-1])   # Biology (last item)
+
+
+# 3. Changing an item in a list
+
+subjects[1] = "Applied Maths"
+
+print("\nCHANGING ITEMS")
+print(subjects)
+
+
+# 4. List length using len()
+
+print("\nLIST LENGTH")
+print(len(subjects))  # 4
+
+
+# 5. List concatenation (+)
+# Joining two lists together
+
+morning_classes = ["English", "Maths"]
+afternoon_classes = ["History", "Biology"]
+
+all_classes = morning_classes + afternoon_classes
+
+print("\nLIST CONCATENATION")
+print(all_classes)
+
+
+# 6. List repetition (*)
+
+numbers = [1, 2, 3]
+
+repeated_numbers = numbers * 3   # new list called repeated_numbers [1,2,3,1,2,3,1,2,3]
+
+print("\nLIST REPETITION")
+print(repeated_numbers)
+
+
+# 7. Checking membership (in and not in)
+
+print("\nLIST MEMBERSHIP")
+print("Maths" in subjects)
+print("History" not in subjects)  # nb boolean operator 'not in' -> reverses 'in'
+
+
+# 8. List slicing
+# Extracting part of a list
+
+sports = ["Football", "Hurling", "Tennis",
+          "Swimming", "Basketball"]
+
+print("\nLIST SLICING")
+print(sports[0:3])   # First three items
+print(sports[2:])    # From index 2 onwards
+print(sports[:2])    # First two items
+
+
+# =========================================
+# COMMON LIST METHODS
+# =========================================
+
+# 9. append() - Adds an item to the end
+
+subjects.append("Art")
+
+print("\nAPPEND METHOD")
+print(subjects)
+
+
+# 10. insert() - Adds an item at a chosen position, remember index starts at 0
+
+subjects.insert(1, "French")
+
+print("\nINSERT METHOD")
+print(subjects)
+
+
+# =========================================
+# Removing items from a list
+# Be careful using these when looping through a list, as you have changed the list
+# e.g. list = ['a', 'b', 'c']
+# for i in range(len(list)):  executes 3 times - when you remove an item you have changed the length of the list
+# and there will be an error when it tries to access the third element, list[2]. 
+# =========================================
+
+# 11. remove() - Removes a specific item
+
+subjects.remove("Biology")
+
+print("\nREMOVE METHOD")
+print(subjects)
+
+
+# 12. pop() - Removes AND returns an item
+
+removed_subject = subjects.pop(0)
+
+print("\nPOP METHOD")
+print("Removed:", removed_subject)
+print(subjects)
+
+
+# 13. sort() - Sorts a list into ascending order
+# N.B. list.sort() and list.reverse() do NOT have a return value,
+# they just alter the list itself
+
+scores = [75, 92, 68, 84, 55]
+
+scores.sort()
+
+print("\nSORT METHOD")
+print(scores)
+
+
+# 14. reverse() - Reverses the order of items
+
+scores.reverse()
+
+print("\nREVERSE METHOD")
+print(scores)
+
+
+# 15. count() - Counts how often an item appears
+
+colours = ["Red", "Blue", "Red", "Green", "Red"]
+
+print("\nCOUNT METHOD")
+print(colours.count("Red"))
+
+
+# 16. index() - Finds the FIRST position of an item - You will only get the index of the first occurrence
+
+print("\nINDEX METHOD")
+print(colours.index("Green"))
+
+
+# 17. clear() - Removes all items from a list N.B. again, does not rrturn anything, just modifies the list
+
+temporary_list = [10, 20, 30]
+
+temporary_list.clear()
+
+print("\nCLEAR METHOD")
+print(temporary_list)
+
+
+# 18. Iterating through a list using a for loop
+
+print("\nLOOPING THROUGH A LIST")
+
+for sport in sports:
+    print(sport)
+
+
+# 19. Finding the largest, smallest and total values
+
+scores = [75, 92, 68, 84, 55]
+
+print("\nLIST FUNCTIONS")
+print("Highest:", max(scores))
+print("Lowest:", min(scores))
+print("Total:", sum(scores))
+print("Number of scores:", len(scores))
+
