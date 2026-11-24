@@ -160,10 +160,7 @@ decimal_number = 15.8
 print("\nROUNDING")
 print(round(decimal_number))  # 16
 
-decimal_number = 15.812745
 
-print("\nROUNDING TO NUMBER OF DECIMAL PLACES")
-print(round(decimal_number,3))  # 15.813
 
 # =========================================
 # PRACTICAL EXAMPLE
