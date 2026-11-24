@@ -1,0 +1,72 @@
+
+# -----------------------------------------
+# BOOLEAN DATA TYPE AND BOOLEAN OPERATORS
+# -----------------------------------------
+
+# 1. Boolean variables
+is_raining = True
+is_sunny = False
+
+print("BOOLEAN VARIABLES")
+print(is_raining)
+print(is_sunny)
+
+print(type(is_raining))
+
+
+# 2. The AND operator
+# Both conditions must be True
+
+has_ticket = True
+is_over_16 = True
+
+can_enter = has_ticket and is_over_16
+
+print("\nAND OPERATOR")
+print("Can enter:", can_enter)
+
+
+# 3. The OR operator
+# At least one condition must be True
+
+has_cash = False
+has_card = True
+
+can_pay = has_cash or has_card
+
+print("\nOR OPERATOR")
+print("Can pay:", can_pay)
+
+
+# 4. The NOT operator
+# Reverses a Boolean value i.e. True -> False, False -> True
+
+is_closed = False
+
+print("\nNOT OPERATOR")
+print("Is open:", not is_closed)
+
+
+# 5. Boolean expressions using comparisons
+
+temperature = 25
+
+is_hot = temperature > 20
+is_cold = temperature < 10
+
+print("\nBOOLEAN EXPRESSIONS")
+print("Is it hot?", is_hot)
+print("Is it cold?", is_cold)
+
+
+# 6. Combining Boolean operators
+
+age = 17
+has_permission = True
+is_suspended = False
+
+can_use_computer = (age >= 16 and has_permission) and not is_suspended
+
+print("\nCOMBINING OPERATORS")
+print("Can use computer:", can_use_computer)
+
