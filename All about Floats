@@ -1,0 +1,197 @@
+
+# =========================================
+# FLOAT DATA TYPE AND FLOAT OPERATORS
+# =========================================
+
+# 1. Creating float variables
+
+temperature = 18.5
+price = 12.99
+distance = 4.75
+
+print("FLOAT VARIABLES")
+print(temperature)
+print(type(temperature))
+
+
+# 2. Addition (+)
+
+number1 = 12.5
+number2 = 3.2
+
+result = number1 + number2
+
+print("\nADDITION")
+print(result)  # 15.7
+
+
+# 3. Subtraction (-)
+
+result = number1 - number2
+
+print("\nSUBTRACTION")
+print(result)  # 9.3
+
+
+# 4. Multiplication (*)
+
+result = number1 * number2
+
+print("\nMULTIPLICATION")
+print(result)  # 40.0
+
+
+# 5. Division (/)
+
+result = number1 / number2
+
+print("\nDIVISION")
+print(result)
+
+
+# 6. Floor division (//)
+
+result = 17.5 // 5
+
+print("\nFLOOR DIVISION")
+print(result)  # 3.0
+
+
+# 7. Modulus (%)
+# Returns the remainder after division
+
+result = 17.5 % 5
+
+print("\nMODULUS")
+print(result)  # 2.5
+
+
+# 8. Exponentiation (**)
+
+result = 2.5 ** 2
+
+print("\nEXPONENTIATION")
+print(result)  # 6.25
+
+
+# =========================================
+# COMPARISON OPERATORS
+# =========================================
+
+# 9. Comparing float values
+
+temperature = 22.5
+
+print("\nCOMPARISON OPERATORS")
+print(temperature == 22.5)  # True
+print(temperature != 20.0)  # True
+print(temperature > 20.0)   # True
+print(temperature < 20.0)   # False
+print(temperature >= 22.5)  # True
+print(temperature <= 25.0)  # True
+
+
+# =========================================
+# ASSIGNMENT OPERATORS
+# =========================================
+
+# 10. Updating float variables
+
+price = 10.5
+
+price += 2.5
+print("\nASSIGNMENT OPERATORS")
+print(price)  # 13.0
+
+price -= 1.0
+print(price)  # 12.0
+
+price *= 2
+print(price)  # 24.0
+
+price /= 4
+print(price)  # 6.0
+
+
+# =========================================
+# BUILT-IN FUNCTIONS
+# =========================================
+
+# 11. Converting to a float
+
+number_as_text = "15.75"
+
+number = float(number_as_text)
+
+print("\nFLOAT CONVERSION")
+print(number)
+print(type(number))
+
+
+# 12. Rounding a float
+
+number = 12.6789
+
+print("\nROUNDING")
+print(round(number))     # 13
+print(round(number, 2))  # 12.68
+
+
+# 13. Absolute value
+
+temperature = -5.7
+
+print("\nABSOLUTE VALUE")
+print(abs(temperature))  # 5.7
+
+
+# 14. Minimum and maximum
+
+measurements = [12.5, 18.7, 9.4, 21.3]
+
+print("\nMINIMUM AND MAXIMUM")
+print(min(measurements))  # 9.4
+print(max(measurements))  # 21.3
+
+
+# 15. Sum of float values
+
+prices = [2.50, 4.75, 3.25]
+
+print("\nSUM")
+print(sum(prices))  # 10.5
+
+
+# =========================================
+# FORMATTING FLOAT VALUES
+# =========================================
+
+# 16. Displaying a specific number of decimal places
+
+average = 76.45678
+
+print("\nFORMATTING FLOATS")
+print(round(average, 2))
+print(f"{average:.2f}")
+
+
+# =========================================
+# PRACTICAL EXAMPLE
+# =========================================
+
+# Calculating the average temperature
+
+monday = 18.5
+tuesday = 20.3
+wednesday = 17.8
+thursday = 19.6
+friday = 21.2
+
+total = monday + tuesday + wednesday + thursday + friday
+
+average = total / 5
+
+print("\nAVERAGE TEMPERATURE")
+print("Average:", round(average, 2))
+print(f"Average temperature: {average:.2f} degrees")
+
