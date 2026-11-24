@@ -1,0 +1,191 @@
+
+# =========================================
+# INTEGER DATA TYPE AND INTEGER OPERATORS
+# =========================================
+
+# 1. Creating integer variables
+
+age = 17
+number_of_students = 25
+year_group = 5
+
+print("INTEGER VARIABLES")
+print(age)
+print(type(age))
+
+
+# 2. Addition (+)
+
+number1 = 15
+number2 = 5
+
+result = number1 + number2
+
+print("\nADDITION")
+print(result)  # 20
+
+
+# 3. Subtraction (-)
+
+result = number1 - number2
+
+print("\nSUBTRACTION")
+print(result)  # 10
+
+
+# 4. Multiplication (*)
+
+result = number1 * number2
+
+print("\nMULTIPLICATION")
+print(result)  # 75
+
+
+# 5. Division (/)
+# Always returns a float, even if the answer is whole
+
+result = number1 / number2
+
+print("\nDIVISION")
+print(result)  # 3.0
+
+
+# 17 divided by 5 = 3 with a remainder of 2. Floor division gives the 3, modulus gives the 2.
+# 6. Floor division (//)
+# Divides and rounds down to the nearest integer - how many times does 5 go into 17, ignore remainder
+
+result = 17 // 5
+
+print("\nFLOOR DIVISION")
+print(result)  # 3
+
+
+# 7. Modulus (%)
+# Returns the remainder after division - this time we only want the remainder
+
+result = 17 % 5
+
+print("\nMODULUS")
+print(result)  # 2
+
+
+# 8. Exponentiation (**)
+# Raises a number to a power
+
+result = 5 ** 2
+
+print("\nEXPONENTIATION")
+print(result)  # 25
+
+result = 25 ** (1/2)
+print("\nROOT")
+print(result)  # 5.0
+
+
+# 9. Comparison operators
+# These produce Boolean results
+
+number = 20
+
+print("\nCOMPARISON OPERATORS")
+print(number == 20)  # True
+print(number != 20)  # False
+print(number > 10)   # True
+print(number < 10)   # False
+print(number >= 20)  # True
+print(number <= 15)  # False
+
+
+# 10. Assignment operators
+
+score = 10
+
+score += 5   # Same as score = score + 5
+print("\nASSIGNMENT OPERATORS")
+print(score)  # 15
+
+score -= 3
+print(score)  # 12
+
+score *= 2
+print(score)  # 24
+
+score //= 4
+print(score)  # 6
+
+
+# =========================================
+# BUILT-IN FUNCTIONS FOR INTEGERS
+# =========================================
+
+# 11. Absolute value - abs()
+
+temperature = -8
+
+print("\nABSOLUTE VALUE")
+print(abs(temperature))  # 8
+
+
+# 12. Power - pow()
+
+print("\nPOWER")
+print(pow(2, 3))  # 8
+print(pow(8, 1/3)) # 2
+
+
+# 13. Minimum and maximum
+
+numbers = [12, 45, 7, 89, 23]
+
+print("\nMINIMUM AND MAXIMUM")
+print(min(numbers))  # 7
+print(max(numbers))  # 89
+
+
+# 14. Converting a value to an integer - int()
+
+number_as_text = "25"
+
+number = int(number_as_text)
+
+print("\nINTEGER CONVERSION")
+print(number)
+print(type(number))
+
+
+# 15. Using round()
+
+decimal_number = 15.8
+
+print("\nROUNDING")
+print(round(decimal_number))  # 16
+
+decimal_number = 15.812745
+
+print("\nROUNDING TO NUMBER OF DECIMAL PLACES")
+print(round(decimal_number,3))  # 15.813
+
+# =========================================
+# PRACTICAL EXAMPLE
+# =========================================
+
+# Calculating how many buses are required
+# for a school trip
+
+students = 127
+bus_capacity = 50
+
+buses_needed = students // bus_capacity  # floor division = number of full buses 
+
+if students % bus_capacity != 0:   # if there's a remainder, we need an extra bus
+    buses_needed += 1
+
+#**********************************************************************************************
+# could also divide and round up - int(math.ceil(students/bus_capacity)) - need to import math*
+#**********************************************************************************************
+
+print("\nSCHOOL TRIP")
+print("Students:", students)
+print("Bus capacity:", bus_capacity)
+print("Buses required:", buses_needed)
+
