@@ -1,0 +1,165 @@
+
+# =========================================
+# STRING DATA TYPE AND STRING OPERATORS
+# =========================================
+
+# 1. Creating strings
+
+first_name = "Sarah"
+last_name = "Murphy"
+school = "St Mary's College"
+
+print("STRING VARIABLES")
+print(first_name)
+print(type(first_name))
+
+
+# 2. String concatenation (+)
+# Joining two or more strings together
+
+full_name = first_name + " " + last_name
+
+print("\nSTRING CONCATENATION")
+print(full_name)
+
+
+# 3. String repetition (*)
+# Repeating a string a specified number of times
+
+message = "Hello! " * 3
+
+print("\nSTRING REPETITION")
+print(message)
+
+#or
+message = "Hello!"
+print(message * 3)
+
+
+# 4. String indexing
+# Accessing individual characters
+# Remember: indexing starts at 0
+
+subject = "Computer Science"
+
+print("\nSTRING INDEXING")
+print(subject[0])    # C
+print(subject[1])    # o
+print(subject[-1])   # e (last character)
+
+
+# 5. String slicing
+# Extracting part of a string
+
+print("\nSTRING SLICING")
+print(subject[0:8])    # Computer
+print(subject[9:16])   # Science
+print(subject[:8])     # Computer
+print(subject[9:])     # Science
+
+
+# 6. Checking if a string contains text (in)
+
+sentence = "Python is a programming language"
+
+print("\nSTRING MEMBERSHIP")
+print("Python" in sentence)       # True
+print("Java" in sentence)         # False
+
+
+# =========================================
+# COMMON STRING METHODS
+# =========================================
+
+# 7. Changing the case of a string
+
+name = "sarah murphy"
+
+print("\nSTRING CASE METHODS")
+print(name.upper())       # SARAH MURPHY
+print(name.lower())       # sarah murphy
+print(name.title())       # Sarah Murphy
+print(name.capitalize())  # Sarah murphy
+
+
+# 8. Removing spaces
+
+text = "   Welcome to Python   "
+
+print("\nREMOVING SPACES")
+print(text.strip())       # Removes spaces at both ends
+print(text.lstrip())      # Removes spaces on the left
+print(text.rstrip())      # Removes spaces on the right
+
+
+# 9. Replacing text
+
+sentence = "I enjoy learning Java"
+
+new_sentence = sentence.replace("Java", "Python")
+
+print("\nREPLACING TEXT")
+print(new_sentence)
+
+
+# 10. Finding text within a string
+
+message = "Welcome to Computer Science"
+
+print("\nFINDING TEXT")
+print(message.find("Computer"))  # Returns starting index of 11
+print(message.find("Maths"))     # Returns -1 if not found
+
+
+# 11. Counting characters or words
+
+sentence = "Python is fun and Python is useful"
+
+print("\nCOUNTING")
+print(sentence.count("Python"))  # Counts occurrences
+
+
+# 12. Splitting a string - returns a list datatype
+
+subjects = "English,Maths,Geography,Computer Science,Physics"
+
+subject_list = subjects.split(",")  # can split on whatever character/string you want, e.g. " ", "e", "phy"
+
+print("\nSPLITTING STRINGS")
+print(subject_list)
+
+
+# 13. Checking string contents
+
+password = "Python123"
+
+print("\nSTRING CHECKING METHODS")
+print(password.isalpha())   # False - tests for ONLY letters 
+print(password.isdigit())   # False - tests for ONLY numbers
+print(password.isalnum())   # True - tests for EITHER letters or numbers (or both)
+
+
+# 14. Finding the length of a string
+
+word = "Programming"
+
+print("\nSTRING LENGTH")
+print(len(word))  # 11
+wordWithSpaces = "  Programming  "
+print(len(wordWithSpaces))  # 15
+
+# 15. Formatted strings (f-strings)
+
+student = "Sarah"
+age = 17
+subject = "Computer Science"
+
+print("\nFORMATTED STRINGS")
+print(f"{student} is {age} years old.")
+print(f"{student} studies {subject}.")
+
+# 16. Looping through each character in a string
+
+# 17. Counting words in a string
+
+
