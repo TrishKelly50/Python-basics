@@ -1,0 +1,17 @@
+# A string stores text
+name = "Alex"
+
+# An integer stores a whole number
+age = 12
+
+# A float stores a number with a decimal point
+height = 1.55
+
+# A boolean stores either True or False
+likes_python = True
+
+# Display each variable and its datatype
+print(name, type(name))
+print(age, type(age))
+print(height, type(height))
+print(likes_python, type(likes_python))
